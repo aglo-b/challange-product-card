@@ -1,0 +1,173 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: hsl(30, 38%, 92%);
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    display:flex;
+    flex-direction: column;
+}
+
+#container {
+    width: 600px;
+    height: 450px;
+    border-radius: 15px;
+    overflow: hidden;
+}
+
+.text {
+    margin-left: 30px;
+    margin-right: 30px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+h1 {
+    font-family: 'Fraunces', serif;
+    line-height: 30px;
+}
+
+#photo {
+    float: left;
+}
+
+#img-desktop {
+    width: 300px;
+}
+
+#img-mobile {
+    display:none;
+}
+
+#content {
+    width: 300px;
+    height: 450px;
+    background-color: white;
+    float: left;
+}
+
+#header {
+    letter-spacing: 3px;
+    padding-top: 30px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+}
+
+#description {
+    font-size: 14px;
+    line-height: 25px;
+    color: hsl(228, 12%, 48%);
+    font-family: 'Montserrat', sans-serif;
+}
+
+#price {
+    display:flex;
+    margin-bottom: 30px;
+}
+
+#new-price {
+    font-size: 32px;
+    color: hsl(158, 36%, 37%);
+    padding-top: 10px;
+    padding-right: 20px;
+    font-family: 'Fraunces', serif;
+}
+
+#old-price {
+    color: hsl(228, 12%, 48%);
+    text-decoration: line-through;
+    font-family: 'Montserrat', sans-serif;
+    padding-top: 15px;
+}
+
+#img-cart {
+    width: 15px;
+    height: 16px;
+    padding-right: 5px;
+    vertical-align: text-bottom;
+}
+
+.button {
+    background-color: hsl(158, 36%, 37%);
+    border: none;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    font-size: 14px;
+    text-decoration: none;
+    text-align: center;
+    margin-left: 30px;
+    padding: 15px 60px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: background-color 0.5s;
+}
+
+.button:hover {
+    background-color: hsl(159, 34%, 24%);
+}
+
+.attribution {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 15px;
+    padding-top: 10px;
+    text-align: center;
+}
+.attribution a {
+    text-decoration: none;
+    font-weight: 600;
+    color:hsl(158, 36%, 37%);
+}
+
+@media only screen and (max-width: 600px) {
+    
+    
+    #container {
+        
+        flex-direction:column;
+        width: 300px;
+        height: 570px;
+    }
+
+    .text {
+        padding-top: 6px;
+        padding-bottom: 6px;
+    }
+
+    #img-desktop {
+        display:none;
+    }
+
+    #img-mobile {
+        display:block;
+        width: 300px;
+    }
+
+    h1 {
+        font-size: 26px;
+    }
+
+    #header {
+        font-size: 12px;
+    }
+    
+    #description {
+        font-size: 12px;
+        line-height: 20px;
+        
+    }
+
+    .button {
+        padding: 15px 60px;
+    }
+
+
+
+}
+
