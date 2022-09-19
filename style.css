@@ -166,6 +166,11 @@ h1 {
     .button {
         padding: 15px 60px;
     }
+    
+    .attribution {
+        inline-size: 300px;
+        overflow-wrap: normal;
+    }
 
 
 
